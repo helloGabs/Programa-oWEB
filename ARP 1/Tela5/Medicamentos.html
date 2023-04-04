@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Medicamentos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Medicamentos</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Adicionar Medicamento</h2>
+            <form id="add-medicine-form">
+                <div>
+                    <label for="medicine-name">Nome do medicamento:</label>
+                    <input type="text" id="medicine-name" required>
+                </div>
+                <button type="submit">Adicionar Medicamento</button>
+            </form>
+        </section>
+        <section>
+            <h2>Lista de medicamentos</h2>
+            <ul id="medicine-list"></ul>
+        </section>
+    </main>
+</body>
+</html>

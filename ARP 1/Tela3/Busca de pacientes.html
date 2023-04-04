@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <script defer src="script.js"></script>
+    <title>Pacientes</title>
+</head>
+<body>
+    <header> 
+        <h1>Consulta de Pacientes</h1>
+    </header>
+    <div id="patient-list"> <!-- Div que irá exibir a lista de pacientes -->
+        <label class="second-label" for="search">Lista de Pacientes:</label> <!-- Label que identifica a lista de pacientes -->
+    </div>
+    <main> 
+        <form id="search-form"> <!-- Formulário de busca -->
+            <label for="search">Buscar paciente por nome ou CPF:</label> <!-- Label que identifica o campo de busca -->
+            <input type="text" id="search" required> <!-- Campo de busca do tipo texto, obrigatório -->
+            <input type="submit" value="Buscar"> <!-- Botão de submit do formulário -->
+        </form>
+    </main>
+</body>
+</html>
