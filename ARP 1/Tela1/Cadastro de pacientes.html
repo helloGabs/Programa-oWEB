@@ -1,0 +1,44 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel Cintra Brandão
+DATA: 02/04/2023 -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro de Pacientes</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Registro de Pacientes</h1>
+	</header>
+	<main>
+		<!-- Formulário de registro de pacientes -->
+		<form id="patient-form">
+			<!-- Campo para inserir nome completo -->
+			<label for="name">Nome completo *</label>
+			<input type="text" id="name" name="name" required>
+			<!-- Campo para inserir data de nascimento -->
+			<label for="birthdate">Data de nascimento *</label>
+			<input type="date" id="birthdate" name="birthdate" required>
+			<!-- Campo para inserir número de CPF -->
+			<label for="cpf">Número de CPF *</label>
+			<input type="text" id="cpf" name="cpf" required>
+			<!-- Campo para inserir endereço completo -->
+			<label for="address">Endereço completo *</label>
+			<input type="text" id="address" name="address" required>
+			<!-- Campo para inserir telefone de contato -->
+			<label for="phone">Telefone de contato *</label>
+			<input type="tel" id="phone" name="phone" required>
+			<!-- Botão para enviar o formulário -->
+			<input type="submit" value="Registrar">
+		</form>
+	</main>
+	<!-- Inclusão do script de validação de formulário -->
+	<script src="script.js"></script>
+</body>
+</html>
