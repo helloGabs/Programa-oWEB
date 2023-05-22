@@ -1,3 +1,8 @@
+/*Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel Cintra Brandão
+DATA: 02/04/2023 */
+
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('appointment-form');
 
