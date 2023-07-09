@@ -1,0 +1,24 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel Cintra Brandão
+DATA: 08/07/2023
+*/
+
+/* Estilos para o Arquivo 4: imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+body {
+    background-image: url("/Semana2/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, p, a {
+    color: #115e57; /* branco */
+}
+

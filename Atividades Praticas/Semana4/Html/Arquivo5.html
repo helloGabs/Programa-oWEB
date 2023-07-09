@@ -1,0 +1,98 @@
+<!--
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel Cintra Brandão
+DATA: 08/07/2023
+-->
+
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="/Semana4/css/Background.css">
+
+<head>
+    <title>Instrumentos Musicais - Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Adicionando a classe 'container' para criar uma área centralizada e limitada -->
+    <div class="container">
+        <!-- Adicionando a classe 'mt-5' para adicionar um espaçamento superior maior entre o título principal e o restante do conteúdo -->
+        <h1 class="mt-5">Menu Principal</h1>
+        
+        <!-- Utilizando a classe 'nav' e 'nav-pills' para criar um menu com estilo de pílulas -->
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="arquivo1.html">Texto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="arquivo2.html">Formulário</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="arquivo3.html">Tabelas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="arquivo4.html">Imagens</a>
+            </li>
+        </ul>
+        
+        <h2>Tabela de Preços</h2>
+        <!-- Utilizando a classe 'table' para estilizar a tabela -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Instrumento</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Guitarra</td>
+                    <td>R$ 1000</td>
+                </tr>
+                <tr>
+                    <td>Piano</td>
+                    <td>R$ 5000</td>
+                </tr>
+                <tr>
+                    <td>Bateria</td>
+                    <td>R$ 2000</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Make it Real a sua loja para instrumentos</h2>
+        <!-- Utilizando a classe 'img-fluid' para criar uma imagem responsiva -->
+        <img src="/Semana1/logo.jpg" alt="Instrumento Musical" class="img-fluid">
+        
+        <h2>Avaliação</h2>
+        <form action="avaliar.php" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" class="form-control" required><br><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="instrumento">Instrumento:</label>
+                <select name="instrumento" class="form-control" required>
+                    <option value="guitarra">Guitarra</option>
+                    <option value="piano">Piano</option>
+                    <option value="bateria">Bateria</option>
+                </select><br><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="avaliacao">Avaliação:</label>
+                <input type="number" name="avaliacao" class="form-control" min="1" max="5" required><br><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="comentario">Comentário:</label><br>
+                <textarea name="comentario" class="form-control" rows="4" cols="50" required></textarea><br><br>
+            </div>
+            
+            <input type="submit" value="Enviar Avaliação" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>

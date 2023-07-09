@@ -1,0 +1,57 @@
+<!--
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel Cintra Brandão
+DATA: 08/07/2023
+-->
+
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="/Semana4/css/Background.css">
+
+<head>
+    <title>Instrumentos Musicais - Formulário</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Adicionando a classe 'container' para criar uma área centralizada e limitada -->
+    <div class="container">
+        <!-- Adicionando a classe 'mt-5' para adicionar um espaçamento superior maior entre o título principal e o restante do conteúdo -->
+        <h1 class="mt-5">Formulário de Contato</h1>
+        
+        <!-- Utilizando as classes 'form' e 'form-group' para criar uma estrutura de formulário responsiva -->
+        <form action="processar.php" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" class="form-control" required><br><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" class="form-control" required><br><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" class="form-control" rows="4" cols="30"></textarea><br><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="instrumento">Instrumento Favorito:</label><br>
+                <select id="instrumento" name="instrumento" class="form-control">
+                    <option value="guitarra">Guitarra</option>
+                    <option value="piano">Piano</option>
+                    <option value="bateria">Bateria</option>
+                    <option value="violino">Violino</option>
+                    <option value="flauta">Flauta</option>
+                </select><br><br>
+            </div>
+            
+            <!-- Utilizando as classes 'btn' e 'btn-primary' para estilizar os botões de envio e limpeza -->
+            <input type="submit" value="Enviar" class="btn btn-primary">
+            <input type="reset" value="Limpar" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!--
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel Cintra Brandão
+DATA: 08/07/2023
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instrumentos Musicais - Formulário</title>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+    
+    <form action="processar.php" method="post">
+        <!-- Campo de entrada para o nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <!-- Campo de entrada para o e-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <!-- Campo de entrada para a mensagem -->
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea><br><br>
+        
+        <!-- Campo de seleção para o instrumento favorito -->
+        <label for="instrumento">Instrumento Favorito:</label><br>
+        <select id="instrumento" name="instrumento">
+            <option value="guitarra">Guitarra</option>
+            <option value="piano">Piano</option>
+            <option value="bateria">Bateria</option>
+            <option value="violino">Violino</option>
+            <option value="flauta">Flauta</option>
+        </select><br><br>
+        
+        <!-- Botão de envio do formulário -->
+        <input type="submit" value="Enviar">
+        <!-- Botão para limpar o formulário -->
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

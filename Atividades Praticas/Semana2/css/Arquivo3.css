@@ -1,0 +1,44 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel Cintra Brandão
+DATA: 08/07/2023
+*/
+
+/* Estilos para o Arquivo 3: tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #ffffff; /* branco */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.dashed-border {
+    border: 1px dashed black;
+}
+
+.solid-border {
+    border: 1px solid black;
+}
+
+body {
+    background-image: url("/Semana2/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

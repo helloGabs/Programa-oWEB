@@ -1,0 +1,78 @@
+<!--
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel Cintra Brandão
+DATA: 08/07/2023
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instrumentos Musicais - Menu</title>
+</head>
+<body>
+    <h1>Menu Principal</h1>
+    
+    <!-- Lista de links para outras paginas do site -->
+    <ul>
+        <li><a href="arquivo1.html">Texto</a></li>
+        <li><a href="arquivo2.html">Formulário</a></li>
+        <li><a href="arquivo3.html">Tabelas</a></li>
+        <li><a href="arquivo4.html">Imagens</a></li>
+    </ul>
+    
+    <h2>Tabela de Preços</h2>
+    <table>
+        <tr>
+            <!-- Cabeçalhos das colunas -->
+            <th>Instrumento</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <!-- Primeira linha da tabela de preços -->
+            <td>Guitarra</td>
+            <td>R$ 1000</td>
+        </tr>
+        <tr>
+            <!-- Segunda linha da tabela de preços -->
+            <td>Piano</td>
+            <td>R$ 5000</td>
+        </tr>
+        <tr>
+            <!-- Terceira linha da tabela de preços -->
+            <td>Bateria</td>
+            <td>R$ 2000</td>
+        </tr>
+    </table>
+    
+    <h2>Make it Real a sua loja para instrumentos</h2>
+    <!-- Imagem do logo da loja -->
+    <img src="logo.jpg" alt="Instrumento Musical" width="400" height="300">
+    
+    <h2>Avaliação</h2>
+    <form action="avaliar.php" method="post">
+        <!-- Campo de entrada para o nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required><br><br>
+        
+        <!-- Campo de seleção para o instrumento -->
+        <label for="instrumento">Instrumento:</label>
+        <select name="instrumento" required>
+            <option value="guitarra">Guitarra</option>
+            <option value="piano">Piano</option>
+            <option value="bateria">Bateria</option>
+        </select><br><br>
+        
+        <!-- Campo de entrada para a avaliação -->
+        <label for="avaliacao">Avaliação:</label>
+        <input type="number" name="avaliacao" min="1" max="5" required><br><br>
+        
+        <!-- Campo de entrada para o comentário -->
+        <label for="comentario">Comentário:</label><br>
+        <textarea name="comentario" rows="4" cols="50" required></textarea><br><br>
+        
+        <!-- Botão de envio da avaliação -->
+        <input type="submit" value="Enviar Avaliação">
+    </form>
+</body>
+</html>

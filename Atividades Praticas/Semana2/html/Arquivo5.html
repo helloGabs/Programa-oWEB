@@ -1,0 +1,70 @@
+<!--
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel Cintra Brandão
+DATA: 08/07/2023
+-->
+
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="/Semana2/css/Arquivo5.css">
+
+<head>
+    <title>Instrumentos Musicais - Menu</title>
+</head>
+<body>
+    <h1>Menu Principal</h1>
+    
+    <ul>
+        <li><a href="arquivo1.html">Texto</a></li>
+        <li><a href="arquivo2.html">Formulário</a></li>
+        <li><a href="arquivo3.html">Tabelas</a></li>
+        <li><a href="arquivo4.html">Imagens</a></li>
+    </ul>
+    
+    <h2>Tabela de Preços</h2>
+    <table>
+        <tr>
+            <th>Instrumento</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Guitarra</td>
+            <td>R$ 1000</td>
+        </tr>
+        <tr>
+            <td>Piano</td>
+            <td>R$ 5000</td>
+        </tr>
+        <tr>
+            <td>Bateria</td>
+            <td>R$ 2000</td>
+        </tr>
+    </table>
+    
+    <h2>Make it Real a sua loja para instrumentos</h2>
+    <img src="/Semana1/logo.jpg" alt="Instrumento Musical" width="400" height="300">
+    
+    <h2>Avaliação</h2>
+    <form action="avaliar.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required><br><br>
+        
+        <label for="instrumento">Instrumento:</label>
+        <select name="instrumento" required>
+            <option value="guitarra">Guitarra</option>
+            <option value="piano">Piano</option>
+            <option value="bateria">Bateria</option>
+        </select><br><br>
+        
+        <label for="avaliacao">Avaliação:</label>
+        <input type="number" name="avaliacao" min="1" max="5" required><br><br>
+        
+        <label for="comentario">Comentário:</label><br>
+        <textarea name="comentario" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar Avaliação">
+    </form>
+</body>
+</html>

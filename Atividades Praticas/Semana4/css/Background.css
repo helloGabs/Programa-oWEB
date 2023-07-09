@@ -1,0 +1,13 @@
+/*
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Gabriel Cintra Brandão
+DATA: 08/07/2023
+*/
+
+/* background geral das paginas */
+body {
+    background-image: url("/Semana4/fundo-branco4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
